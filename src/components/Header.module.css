@@ -12,7 +12,7 @@
 }
 
 .mobileMode {
-  background-image: url("/public/IMG_1052.png");
+  /* background-image: url("/public/IMG_1052.png"); */
   background-position: -300px center;
   background-position: -315px top;
   height: 90vh;
@@ -25,7 +25,7 @@
 }
 
 .desktopMode {
-  background-image: url("/public/IMG_1052.png");
+  /* background-image: url("/public/IMG_1052.png"); */
   background-position: -200px center;
   height: 90vh;
   width: 100%;
@@ -53,4 +53,20 @@
   width: auto;
   font-size: 1.5vw;
   color: white;
+}
+
+.fadeIn {
+  opacity: 0; /* Start hidden */
+  animation: fadeIn 2s ease-in-out 1s forwards; /* 2s duration, 1s delay */
+}
+
+.fadeInLater {
+  opacity: 0; /* Start hidden */
+  animation: fadeIn 2s ease-in-out 2s forwards; /* 2s duration, 1s delay */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }

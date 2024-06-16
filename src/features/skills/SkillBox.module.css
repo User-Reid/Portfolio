@@ -17,6 +17,8 @@
   max-width: 100px;
   min-width: 60px;
   min-height: 60px;
+  transition: transform 0.3s ease; /* Smooth transition effect */
+  cursor: pointer;
 }
 
 .skillContainer {
@@ -25,4 +27,9 @@
   width: 100%;
   flex-wrap: wrap;
   margin: 20px 0px 20px 0px;
+}
+
+/* Hover state */
+.skillRow img:hover {
+  transform: translateY(-20px); /* Lift the element up by 50px */
 }

@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import styles from "./SkillDescription.module.css";
+// import { guessTheNumber, pigGame } from "./skillSlice";
 
 function SkillDisplay() {
   const skill = useSelector((state) => state.skillDescriptions.skill);
@@ -10,6 +11,7 @@ function SkillDisplay() {
   const skillDescription = useSelector(
     (state) => state.skillDescriptions.skillDescription
   );
+  // const dispatch = useDispatch();
 
   return (
     <div className={styles.container}>
@@ -25,12 +27,12 @@ function SkillDisplay() {
         </div>
       </div>
       <p className={styles.skillDescription}>{skillDescription}</p>
-      <div className="projectIcons">
-        <button>Project 1</button>
-        <button>Project 2</button>
+      {/* <div className="projectIcons">
+        <button onClick={() => dispatch(pigGame())}>Project 1</button>
+        <button onClick={() => dispatch(guessTheNumber())}>Project 2</button>
         <button>Project 3</button>
         <button>Project 4</button>
-      </div>
+      </div> */}
     </div>
   );
 }

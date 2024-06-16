@@ -25,6 +25,7 @@ function SkillBox() {
   const [display, setDisplay] = useState(false);
 
   const skill = useSelector((state) => state.skillDescriptions.skill);
+
   // const isLoading = useSelector((state) => state.skillDescriptions.isLoading);
   // const skillLogo = useSelector((state) => state.skillDescriptions.skillLogo);
   // const skillDescription = useSelector(
