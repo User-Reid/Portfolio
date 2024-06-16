@@ -1,0 +1,28 @@
+.skillRow {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2; /* Lower z-index */
+}
+
+.skillRow a:hover {
+  cursor: pointer;
+}
+
+.skillRow img {
+  margin: 0px 2px 2px 2px;
+  width: 12vw;
+  max-width: 100px;
+  min-width: 60px;
+  min-height: 60px;
+}
+
+.skillContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 20px 0px 20px 0px;
+}

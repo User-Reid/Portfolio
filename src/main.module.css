@@ -1,0 +1,26 @@
+.godContainer {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid black;
+  width: 100%;
+  height: 100vh;
+}
+
+.backgroundImageSmall {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Lower z-index */
+  pointer-events: none;
+  height: 100vh;
+  transform: translateX(-300px);
+}
+
+.backgroundImageBig {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Lower z-index */
+  pointer-events: none;
+  height: 100vh;
+}

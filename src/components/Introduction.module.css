@@ -1,0 +1,22 @@
+.introductionContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.introductionContainer img {
+  border-radius: 150px;
+}
+
+.profileContainer {
+  display: flex;
+}
+
+.profileSection {
+  display: flex;
+  /* max-width: 500px; */
+}
+
+.bioSection {
+  width: 50%;
+}
