@@ -47,7 +47,7 @@ function SkillBox() {
   }
 
   return (
-    <div>
+    <div style={{ marginBottom: "50px" }}>
       <div className={styles.skillRow}>
         <a onClick={() => handleSkillSwitch(html(), "HTML")}>
           <img src="/html-icon-100x100.png" />

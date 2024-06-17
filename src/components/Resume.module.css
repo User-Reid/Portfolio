@@ -1,3 +1,53 @@
 .resumeContainer {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.desktopResumeContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 600px;
+}
+
+.mobileResumeContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.resumeSide {
+  width: 50%;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bioSide {
+  width: 45%;
+  min-width: 300px;
+  font-size: 20px;
+}
+
+.iframe {
+  margin: 0;
+}
+
+.resumeDownloadTextBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  min-height: 30px;
+  text-align: center;
+  border-radius: 15px;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
 }
