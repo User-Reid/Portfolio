@@ -23,6 +23,7 @@ import { useDispatch } from "react-redux";
 function SkillBox() {
   const dispatch = useDispatch();
   const [display, setDisplay] = useState(false);
+  const isMobile = window.innerWidth <= 390;
 
   const skill = useSelector((state) => state.skillDescriptions.skill);
 
@@ -47,10 +48,13 @@ function SkillBox() {
   }
 
   return (
-    <div style={{ marginBottom: "50px" }}>
+    <div style={{ marginBottom: isMobile ? "" : "50px" }}>
       <div className={styles.skillRow}>
         <a onClick={() => handleSkillSwitch(html(), "HTML")}>
-          <img src="/html-icon-100x100.png" />
+          <img
+            src="/html-icon-100x100.png"
+            className={skill === "" ? styles.bounceElement : ""}
+          />
         </a>
         <a onClick={() => handleSkillSwitch(css(), "CSS")}>
           <img src="/css-icon-100x100.png" />
@@ -99,7 +103,19 @@ function SkillBox() {
           <SkillDescription />
           <ProjectDisplay />
         </div>
-      ) : null}
+      ) : (
+        <div className={styles.noSkillHeader}>
+          <h1
+            className={styles.breathingText}
+            style={
+              ({ fontSize: isMobile ? "45px" : "2em" },
+              { color: skill === "" ? "black" : "white" })
+            }
+          >
+            Click on the skills to view projects
+          </h1>
+        </div>
+      )}
     </div>
   );
 }

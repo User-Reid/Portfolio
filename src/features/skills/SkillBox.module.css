@@ -33,3 +33,49 @@
 .skillRow img:hover {
   transform: translateY(-20px); /* Lift the element up by 50px */
 }
+
+.activeSkill {
+  transform: translateY(-20px);
+}
+
+.noSkillHeader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.breathingText {
+  text-align: center; /* Center text horizontally */
+  animation: breathe 4s infinite ease-in-out; /* Adjust duration as needed */
+}
+
+@keyframes breathe {
+  0% {
+    opacity: 0; /* Start fading out */
+  }
+  50% {
+    opacity: 1; /* Fully visible */
+  }
+  100% {
+    opacity: 0; /* Fade out again */
+  }
+}
+
+.bounceElement {
+  /* Animation */
+  animation: bounce 4s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0); /* Start and end at the same position */
+  }
+  50% {
+    transform: translateY(-20px); /* Bounce up */
+  }
+}

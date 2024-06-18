@@ -75,7 +75,7 @@ const skillsSlice = createSlice({
       state.profilePic = "./react-alt-2-profile-pic.png";
     },
     photoshop(state) {
-      state.skill = "Photoshop";
+      state.skill = "Adobe Photoshop";
       state.skillDescription =
         "I have been using Photoshop for roughly 8 years now! I have used photoshop for graphic design, photo editing, and content creation!";
       state.project = "https://youtu.be/H22h5fvUz_s";

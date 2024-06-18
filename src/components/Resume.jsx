@@ -29,9 +29,7 @@ function Resume() {
       }
     >
       <div className={styles.resumeSide}>
-        {isMobile ? (
-          <a>📁Resume</a>
-        ) : (
+        {isMobile ? null : (
           <iframe
             src="https://drive.google.com/file/d/1n05iVFx2tAq-KhUJ1aGIyrUhD-M3F289/preview"
             width="100%"
@@ -41,15 +39,38 @@ function Resume() {
           ></iframe>
         )}
       </div>
-      <div className={styles.bioSide}>
-        <p>
-          Highly motivated and highly driven with endless ambition. Open minded
-          and charismatic with a strong positive mindset. Flexible, reliable,
-          who has excellent communication skills! An energetic team player,
-          outgoing personality, strong work ethic, organized, and has the
-          ability to work in a fast paced environment.
-        </p>
-      </div>
+      {isMobile ? (
+        <div className={styles.bioSide}>
+          <h3>Career Summary</h3>
+          <p>
+            Highly motivated and highly driven with endless ambition. Open
+            minded and charismatic with a strong positive mindset. Flexible,
+            reliable, who has excellent communication skills! An energetic team
+            player, outgoing personality, strong work ethic, organized, and has
+            the ability to work in a fast paced environment.
+          </p>
+          <a>Download Resume</a>
+          <img
+            src="./marketingCertification-515x400.png"
+            style={{ width: "100%" }}
+          />
+        </div>
+      ) : (
+        <div className={styles.bioSide}>
+          <h3>Career Summary</h3>
+          <p>
+            Highly motivated and highly driven with endless ambition. Open
+            minded and charismatic with a strong positive mindset. Flexible,
+            reliable, who has excellent communication skills! An energetic team
+            player, outgoing personality, strong work ethic, organized, and has
+            the ability to work in a fast paced environment.
+          </p>
+          <img
+            src="./marketingCertification-515x400.png"
+            style={{ width: "100%" }}
+          />
+        </div>
+      )}
     </div>
   );
 }
