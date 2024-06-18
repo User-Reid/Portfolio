@@ -7,7 +7,7 @@ function Contact() {
         <h3>{`Let's Connect!`}</h3>
       </div>
       <div className={styles.links}>
-        <a>
+        <a href="mailto:your-email@example.com">
           <img src="./gmail-icon.png" />
         </a>
         <a>
