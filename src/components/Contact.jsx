@@ -13,10 +13,10 @@ function Contact() {
         <a>
           <img src="./phone-icon.png" />
         </a>
-        <a>
+        <a href="https://www.linkedin.com/in/reid-herrera-6803581bb/">
           <img src="./linkedIn-icon.png" />
         </a>
-        <a>
+        <a href="https://github.com/User-Reid">
           <img src="./github-icon.png" />
         </a>
       </div>
